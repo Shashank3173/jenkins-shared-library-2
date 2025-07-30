@@ -1,8 +1,8 @@
 def call() {
-    sh '''
+    sh ''
         mkdir -p todo
-        echo "this is the shared file from github and used in two pipelines and using it in 30th july pipeline too" | tee -a todo/new.txt
-    '''
+       ' echo "this is the shared file from github and used in two pipelines and using it in 30th july pipeline too" | tee -a todo/new.txt '
+    ''
 
     echo "today's jenkins work is to set up the agent"
 
